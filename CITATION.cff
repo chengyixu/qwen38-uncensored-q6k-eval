@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you cite or use these experimental deployment records, please cite as below."
+title: "Abliterated Qwen3.8-27B Q6_K on Apple Silicon: Baseline 262K Serving Profile, Memory Footprint, and Latency Analysis"
+authors:
+  - family-names: Xu
+    given-names: Chengyi
+    orcid: "https://orcid.org/0009-0008-1277-6670"
+  - name: Nexora
+version: 1.0.0
+date-released: 2026-10-25
+type: dataset
+url: "https://github.com/chengyixu/qwen38-uncensored-q6k-eval"
+license: MIT
+abstract: "Deployment specifications, verification logs, and benchmark analysis for OrcaRouter's abliterated Qwen3.8-27B Q6_K GGUF at 262,144 native context on Apple Silicon (M4 Max 64GB). Measures prefill latency, memory allocation, and tool-calling reliability under real agent workloads."

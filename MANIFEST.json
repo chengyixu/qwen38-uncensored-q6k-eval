@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "deployment": "qwen38-uncensored-q6k",
+  "machine": "MacBook Pro M4 Max 64GB",
+  "source": {
+    "repository": "orcarouter/Qwen3.8-27B-Uncensored-GGUF",
+    "revision": "a855f377abf5cbda99a278414466743f427e97c8",
+    "file": "Qwen3.8-27B-Uncensored-Q6_K.gguf",
+    "sizeBytes": 22430999936,
+    "sha256": "1a0d6fe2e48417f1571a57a7104b4d5da0c45c3d00de18fa7aa48affca5a24d7"
+  },
+  "runtime": {
+    "engine": "llama.cpp",
+    "binary": "/opt/homebrew/bin/llama-server",
+    "serviceLabel": "local.llamacpp.qwen38-uncensored-q6k",
+    "endpoint": "http://127.0.0.1:7870/v1",
+    "modelId": "Qwen3.8-27B-Uncensored-Q6_K",
+    "contextWindow": 262144,
+    "kvCacheK": "q4_0",
+    "kvCacheV": "q4_0",
+    "parallelSlots": 1,
+    "reasoning": true,
+    "reasoningBudget": 8192,
+    "networkExposure": "loopback-only",
+    "authentication": "api-key-file"
+  },
+  "verification": {
+    "verifiedAt": "2026-09-16T01:12:59+08:00",
+    "sha256Matched": true,
+    "healthPassed": true,
+    "authenticationGatePassed": true,
+    "textGenerationPassed": true,
+    "toolCallingPassed": true,
+    "piAgentFileEditAndTestPassed": true,
+    "piAgentObservedOutput": "AGENT_262K_OK",
+    "finalContextAllocationVerified": 262144
+  }
+}

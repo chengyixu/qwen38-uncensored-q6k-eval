@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>local.llamacpp.qwen38-uncensored-q6k</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/opt/homebrew/bin/llama-server</string>
+    <string>-m</string>
+    <string>/path/to/models/Qwen3.8-27B-Uncensored-Q6_K.gguf</string>
+    <string>--port</string>
+    <string>7870</string>
+    <string>--host</string>
+    <string>127.0.0.1</string>
+    <string>-c</string>
+    <string>262144</string>
+    <string>--ctk</string>
+    <string>q4_0</string>
+    <string>--ctv</string>
+    <string>q4_0</string>
+    <string>-ngl</string>
+    <string>99</string>
+    <string>--alias</string>
+    <string>Qwen3.8-27B-Uncensored-Q6_K</string>
+    <string>--api-key-file</string>
+    <string>/path/to/keys/api-keys.txt</string>
+  </array>
+  <key>KeepAlive</key>
+  <false/>
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>
